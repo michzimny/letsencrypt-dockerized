@@ -13,8 +13,6 @@ wget https://raw.githubusercontent.com/michzimny/letsencrypt-dockerized/master/r
 chmod +x run-certbot.sh
 ```
 
-The last command takes arguments like certbot. ~~See docker/entrypoint.sh for investigation.~~
-
 ## Obtaining or renewing cert
 
 ```
