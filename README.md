@@ -6,22 +6,19 @@ It packages Apache HTTP server and Certbot in a Docker container to even more au
 
 Use it on a server that is pointed by DNS with your domain name.
 
-## Obtaining cert for the first time
+## Preparation
 
 ```
 wget https://raw.githubusercontent.com/michzimny/letsencrypt-dockerized/master/run-certbot.sh
 chmod +x run-certbot.sh
-./run-certbot.sh certonly -d your-domain-name.com
 ```
 
 The last command takes arguments like certbot. ~~See docker/entrypoint.sh for investigation.~~
 
-## Other options
-
-For renewal:
+## Obtaining or renewing cert
 
 ```
-./run-certbot.sh renew
+ ./run-certbot.sh certonly -d your-domain-name.com
 ```
 
 For help:
