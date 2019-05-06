@@ -16,8 +16,10 @@ chmod +x run-certbot.sh
 ## Obtaining or renewing cert
 
 ```
- ./run-certbot.sh certonly -d your-domain-name.com
+ ./run-certbot.sh certonly -d your-domain-name.com --standalone
 ```
+
+Do not use it with `renew` subcommand. It probably won't work.
 
 For help:
 
@@ -25,5 +27,5 @@ For help:
 ./run-certbot.sh -h
 ```
 
-or see https://certbot.eff.org/docs/
+or see https://certbot.eff.org/docs/install.html#running-with-docker
 
